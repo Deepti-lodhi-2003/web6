@@ -219,7 +219,7 @@ nav ul li a {
     width: 12rem;
     text-align: center;
     color: #000;
-    margin-left: 10%;
+    margin-left: 9.9%;
     margin-top: -5px;
     position: absolute;
     border-bottom-left-radius: 20px;
@@ -229,18 +229,16 @@ nav ul li a {
 .box h3 {
     font-size: 1rem;
 }
-
 .box p {
     font-size: 0.9rem;
     margin-top: -10px;
     color: #888888;
 }
-
 .about-right-bottom {
-    margin-top: 175px;
+    margin-top: 150px;
+    margin-bottom: 50px;
     margin-left: 90px;
 }
-
 .about-right-bottom h2 {
     font-size: 1.2rem;
 }
@@ -263,6 +261,103 @@ nav ul li a {
     color: #FFFFFF;
     text-decoration: underline;
 }
+.pannel{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+}
+.pannel-container{
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+}
+.left-panel {
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    /* box-shadow: 2px 0 5px rgba(0,0,0,0.1); */
+}
+.top{
+    width: 98.2%;
+    background-color: #F4F4F4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    overflow: hidden;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+.circle-red{
+    background-color: #FC615D;
+    width: 7px;
+    height: 7px;
+    margin-right: 10px;
+    border-radius: 50%;
+    float: left;
+}
+.circle-orange{
+    background-color: #FDBC40;
+    width: 7px;
+    height: 7px;
+    margin-right: 10px;
+    border-radius: 50%;
+    float: left;
+}
+.circle-green{
+    background-color: #34C84A;
+    width: 7px;
+    height: 7px;
+    margin-right: 10px;
+    border-radius: 50%;
+    float: left;
+}
+.left-panel img {
+    width: 100%;
+    border: 2px solid #F4F4F4;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.right-panel {
+    width: 50%;
+    padding: 60px;
+    margin-left: 40px;
+    margin-top: -60px;
+    line-height:27px;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 550;
+}
+.section-title {
+    font-weight: bold;
+    font-size:1.4rem;
+    margin-top: 20px;
+}
+.description {
+    font-size:1.2rem;
+    margin: 10px 0 30px 0;
+    color: #888888;
+    margin-top: 25px;
+}
+p{
+    font-size:1rem;
+    color: #888888;
+}
+.right-panel .text-small{
+    color: #888888;
+    line-height:30px;
+}
+.text-small a {
+    font-size:0.9rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: #6772e5;
+    border-bottom: 1px solid #a8aef0;
+}
+
+
 
 @media (max-width: 768px) {
     body {
@@ -392,7 +487,7 @@ nav ul li a {
     
     .box {
         width: 10rem;
-        margin-left: 36.7%;
+        margin-left: 36.3%;
     }       
     .box h3 {
         font-size: 1rem;
@@ -414,4 +509,67 @@ nav ul li a {
         font-weight: 540;
     }
 
+    .pannel {
+        flex-direction: column; 
+        height: auto; 
+        align-items: center;
+        padding: 20px;
+        overflow-x: hidden;
+    }
+
+    .pannel-container {
+        flex-direction: column; 
+        padding-top: 20px; 
+    }
+
+    .right-panel {
+        width: 100%; 
+        padding: 20px 30px;
+    }
+    .left-panel{
+        margin-left: -15px;
+        width: 85%; 
+        padding: 20px 30px;
+    }
+    .left-panel img {
+        width:266px;
+    }
+
+    .right-panel {
+        margin-left: 0;
+        margin-top: 0;
+        margin-left: -15px;
+        padding: 20px 30px;
+    }
+
+    .top {
+        width: 100%; 
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.4rem; 
+        line-height: 50px;
+        padding-right: 35px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+        padding-right: 40px;
+        line-height: 30px;
+    }
+
+    .description {
+        font-size: 1.2rem; 
+        margin: 10px 0 20px 0; 
+    }
+
+    p {
+        font-size: 1rem; 
+        padding-right: 35px;
+    }
+    .right-panel .text-small {
+        font-size:1rem; 
+        line-height: 24px; 
+    }
 }
