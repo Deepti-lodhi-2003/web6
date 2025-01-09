@@ -24,7 +24,7 @@ header {
 
 .container img {
     margin: 0;
-    width: 10rem;
+    width: 8rem;
 }
 
 .container .menu {
@@ -420,87 +420,81 @@ p{
     margin-right: 5px;
 }
 
-@media (max-width: 768px) {
-    .testimonials {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-
 .fourth-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     padding: 40px 20px 110px 20px;
 }
+
 .content {
     max-width: 1200px;
     width: 100%;
-    display: flex;
-    /* flex-direction: column; */
+    display: block;
     align-items: center;
     gap: 50px;
 }
+
 .four-left{
-    width: 60%;
+    width: 100%;
 }
+
 .heading {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    margin-left: -270px;
 }
+
 .subtext {
     color: #888888;
     font-size: 1.2rem;
     margin-bottom: 40px;
-    margin-left: -320px;
 }
+
 .support-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 40px;
     width: 100%;
 }
+
 .support-box {
     text-align: left;
-    margin-left: -35px;
-    margin-top: -20px;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    flex-basis: 100%;
 }
+
 .support-next{
-    margin-left: -100px;
-    /* padding-right: 10px; */
+    margin-left: 0;
 }
+
 .support-box h3 {
     font-size: 1.3rem;
 }
+
 .support-box p {
     color: #888888;
     line-height: 30px;
 }
+
 .support-box a {
     color: #4f46e5;
     text-decoration: none;
     font-weight:500;
     border-bottom: 1px solid #a8aef0;
 }
+
 .image-section {
     margin-top: 40px;
-    width: 40%;
+    width: 100%;
 }
+
 .image-section img {
     width: 90%;
     max-width: 500px;
-}
-@media (min-width: 768px) {
-    .support-section {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .support-box {
-        max-width: 45%;
-    }
 }
 
 
@@ -572,10 +566,11 @@ p{
 
 .footer a {
     display: block;
-    color: #555;
+    color: #888888;
     text-decoration: none;
     margin-bottom: 8px;
     font-size: 14px;
+    line-height: 25px;
 }
 
 .footer a:hover {
@@ -585,6 +580,7 @@ p{
 .footer-bottom {
     text-align: center;
     margin-top: 30px;
+    padding-bottom: 50px;
     font-size: 14px;
     color: #777;
 }
@@ -593,26 +589,13 @@ p{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    margin-top: -220px;
+    margin-top: -325px;
 }
 
 .footer-logo img {
     height: 35px;
     margin-right: 10px;
 }
-
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer-section {
-        text-align: center;
-    }
-}
-
-
-
 
 @media (max-width: 768px) {
     body {
@@ -765,7 +748,7 @@ p{
         font-weight: 540;
     }
 
-    .pannel {
+    .pannel{
         flex-direction: column; 
         height: auto; 
         align-items: center;
@@ -828,4 +811,45 @@ p{
         font-size:1rem; 
         line-height: 24px; 
     }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px; 
+    }
+    .footer-section {
+        text-align: center;
+        margin: 10px 0;
+        flex-basis: 100%; 
+    }
+    .footer-logo {
+        margin-top: 0;
+    }
+    .footer-bottom {
+        margin-top: 20px;
+    }
+
+    .signup-form input[type="email"] {
+        padding: 5px 20px;
+        font-size: 0.9rem;
+        width: 150px;
+        border: none;
+        border-radius: 5px;
+    }
+    .signup-form button {
+        padding: 10px 30px;
+        font-size: 0.9rem;
+        background-color: #f97373;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+   
 }
